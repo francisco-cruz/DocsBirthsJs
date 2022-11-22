@@ -1,31 +1,27 @@
-import { Flex, IconButton } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { useState } from "react";
+import { Flex } from "@chakra-ui/react";
+import { useMediaQuery } from '@chakra-ui/react'
+
 export default function Sidebar() {
-  const [navSize, changeNavSize] = useState("large");
+
+  const [isSmallerThan900] = useMediaQuery('(max-width: 767px)')
+
   return (
     <>
       <Flex
-        position="sticky"
-        left={5}
-        marginTop="2.5vh"
+        display={isSmallerThan900 ? "none" : "block" }
+        position="fixed"
+        top="0"
+        left="0"
         flexDir="column"
+        borderEnd="1px solid #ffffff20"
         justifyContent="space-between"
         boxShadow="0 4px 12px 0 rgba( 0, 0, 0, 0.05)"
-        h="95vh"
-        w={navSize === "small" ? "75px" : "200px"}
-        bg="white"
+        h="100vh"
+        w="250px"
+        bg="transparent"
       >
         <Flex p="5%" flexDir="column" alignItems="flex-start" as="nav">
-          <IconButton
-            mt={5}
-            _hover={<HamburgerIcon />}
-            onClick={() => {
-              navSize === "small"
-                ? changeNavSize("large")
-                : changeNavSize("small");
-            }}
-          />
+          
         </Flex>
       </Flex>
     </>
