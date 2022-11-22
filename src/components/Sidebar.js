@@ -22,7 +22,7 @@ export default function Sidebar() {
         justifyContent="space-between"
         boxShadow="0 4px 12px 0 rgba( 0, 0, 0, 0.05)"
         h="100vh"
-        w="250px"
+        minW="250px"
         bg="transparent"
       >
         <Flex

@@ -3,19 +3,16 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
-  Icon,
   Link,
   Popover,
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Logo from "../components/Navbar/Logo";
 
 export default function Header() {
@@ -39,8 +36,8 @@ export default function Header() {
           display={{ base: "flex", md: "none" }}
         >
           <IconButton
-            pos="absolute" 
-            right='20px' 
+            pos="absolute"
+            right="20px"
             top="15px"
             onClick={onToggle}
             icon={
@@ -63,7 +60,6 @@ export default function Header() {
     </Box>
   );
 }
-
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
@@ -97,8 +93,7 @@ const DesktopNav = () => {
                 p={4}
                 rounded={"xl"}
                 minW={"sm"}
-              >
-              </PopoverContent>
+              ></PopoverContent>
             )}
           </Popover>
         </Box>
@@ -106,7 +101,6 @@ const DesktopNav = () => {
     </Stack>
   );
 };
-
 
 const MobileNav = () => {
   return (
@@ -121,7 +115,6 @@ const MobileNav = () => {
     </Stack>
   );
 };
-
 
 const MobileNavItem = ({ label, src }) => {
   const { isOpen, onToggle } = useDisclosure();
@@ -152,8 +145,7 @@ const MobileNavItem = ({ label, src }) => {
           borderStyle={"solid"}
           borderColor={useColorModeValue("gray.200", "gray.700")}
           align={"start"}
-        >
-        </Stack>
+        ></Stack>
       </Collapse>
     </Stack>
   );

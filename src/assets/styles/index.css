@@ -1,3 +1,32 @@
+
 body {
     background-color: #1A202C !important;
 }
+
+pre {
+    margin-top: 15px;
+    border: 1px solid #ffffff30;
+    border-radius: 4px;
+    width: 100%;
+    padding: 16px;
+}
+
+pre span {
+    font-size: 14px;
+}
+
+pre span.comment {
+    color: #ffffff70;
+    margin-bottom: 100px;  
+}
+
+pre span.function {
+    color: #61DAFB;
+    font-size: 14px;
+}
+
+pre span.string {
+    color: #61FBDF;
+    font-size: 14px;
+}
+
