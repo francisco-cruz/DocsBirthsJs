@@ -17,10 +17,13 @@ pre span {
 
 pre span.comment {
     color: #ffffff70;
-    margin-bottom: 100px;  
+    margin-bottom: 10px;  
 }
 
-pre span.function {
+pre span.function,
+pre span.operator,
+pre span.punctuation
+{
     color: #61DAFB;
     font-size: 14px;
 }

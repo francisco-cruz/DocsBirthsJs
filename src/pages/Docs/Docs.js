@@ -1,5 +1,6 @@
 import {
   Box,
+  Flex,
   Heading,
   Highlight,
   ListItem,
@@ -65,26 +66,71 @@ export default function Docs() {
           <Heading fontSize="16px" fontWeight={400}>
             <Highlight
               query={["FormBirth", "InputBirth"]}
-              styles={{ px: "2", py: "1", rounded: "0", fontSize:"14px", bg: "#9261FB30", color:"#9261FB", mx:"2px" }}
+              styles={{
+                px: "2",
+                py: ".8",
+                rounded: "0",
+                fontSize: "14px",
+                bg: "#9261FB30",
+                color: "#9261FB",
+                mx: "2px",
+              }}
             >
-            Import FormBirth and InputBirth from birthsjs.
+              Import FormBirth and InputBirth from birthsjs.
             </Highlight>
           </Heading>
           <Stack direction="row">
             <pre>
               <code>
                 <div>
-                  <span class="comment"># With npm</span>
-                </div>
-                <div>
-                  <span class="function">import</span>{" "}
-                  birthsjs{" "}
+                  <span class="function">import</span>
+                  {"\n"}
+                  FormBirth, {"\n"}
+                  InputBirth{"\n"}
                   <span class="function">from</span>{" "}
                   <span class="string">'birthsjs'</span>{" "}
                 </div>
               </code>
             </pre>
           </Stack>
+          <Heading fontSize="20px">Use it</Heading>
+          <Heading fontSize="16px" fontWeight={400}>
+            <Highlight
+              query={["FormBirth", "InputBirth"]}
+              styles={{
+                px: "2",
+                py: ".8",
+                rounded: "0",
+                fontSize: "14px",
+                bg: "#9261FB30",
+                color: "#9261FB",
+                mx: "2px",
+              }}
+            >
+              Use the FormBirth function to create a form component and add the
+              InputBirth to it.
+            </Highlight>
+          </Heading>
+          <Stack direction="row">
+            <pre>
+              <code>
+                <div>
+                  <span class="comment">
+                    import{"\n"}FormBirth,{"\n"}InputBirth{"\n"}from 'birthsjs'{" "}
+                  </span>
+                </div>
+                <div>
+                  <span class="function">import</span> birthsjs{" "}
+                  <span class="function">from</span>{" "}
+                  <span class="string">'birthsjs'</span>{" "}
+                </div>
+              </code>
+            </pre>
+          </Stack>
+        </Stack>
+        <Stack>
+          <Stack>Previous</Stack>
+          <Stack>Next</Stack>
         </Stack>
       </Stack>
       <Stack
