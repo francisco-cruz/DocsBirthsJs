@@ -1,3 +1,4 @@
+import { Flex, Text } from "@chakra-ui/react"
 import React from "react"
 import '../assets/styles/index.css'
 import Navbar from "../components/Navbar/Navbar"
@@ -8,8 +9,9 @@ export default function Docs() {
   <>
     <Navbar/>
     < Sidebar />
-
-    <h1> docs </h1>
+    <Flex w="100%" h="100%" bg="red">
+      <Text>OIoioi</Text>
+    </Flex>
   </>  
     )
 }

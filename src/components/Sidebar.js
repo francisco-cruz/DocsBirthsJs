@@ -1,11 +1,9 @@
 import {
   Flex,
-  Image,
   Link,
   Stack,
   Text,
   useColorModeValue,
-  useDisclosure,
 } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Logo from "./Navbar/Logo";
@@ -35,12 +33,16 @@ export default function Sidebar() {
           flexDir="column"
           alignItems="flex-start"
           as="header"
-          bg="red"
         >
           <Logo />
         </Flex>
 
-        <Stack mt="60px">
+        <Stack mt="70px">
+          <Text
+          color="#61DAFB"
+          fontWeight={600}
+          ml="25px"
+          >Getting Started</Text>
           <Nav />
         </Stack>
       </Flex>
@@ -62,6 +64,7 @@ const NavItem = ({ label, href }) => {
   return (
     <Stack
       spacing={4}
+      py={1}
       display="flex"
       flexDir="row-reverse"
       justifyContent="start"
@@ -70,7 +73,6 @@ const NavItem = ({ label, href }) => {
       }}
     >
       <Flex
-        py={2}
         as={Link}
         href={href ?? "#"}
         justify={"space-between"}
@@ -80,8 +82,9 @@ const NavItem = ({ label, href }) => {
         }}
       >
         <Text
-          ml="16px"
-          fontWeight={600}
+          ml="25px"
+          fontWeight={400}
+          fontSize="15px"
           color={useColorModeValue("gray.600", "gray.200")}
         >
           {label}

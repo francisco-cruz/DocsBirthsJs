@@ -24,7 +24,7 @@ export default function WithSubnavigation() {
         flexDir="row-reverse"
         bg="#333333"
         color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
+        minH={"70px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={isOpen ? "1px solid transparent" : "1px solid #ffffff20"}
