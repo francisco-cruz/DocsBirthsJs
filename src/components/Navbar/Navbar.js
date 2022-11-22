@@ -1,17 +1,15 @@
 import {
   Box,
   Flex,
-  Text,
   IconButton,
-  Stack,
   Collapse,
-  Link,
   useColorModeValue,
   useDisclosure,
   useMediaQuery,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Logo from "./Logo";
+import Nav from "../Nav";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -49,66 +47,9 @@ export default function WithSubnavigation() {
         </Flex>
         <Logo />
       </Flex>
-
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
+        <Nav />
       </Collapse>
     </Box>
   );
 }
-
-const MobileNav = () => {
-  return (
-    <Stack
-      bg="#333"
-      borderBottom="1px solid #ffffff20"
-      p={4}
-      display={{ md: "none" }}
-    >
-      {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label } {...navItem}/>
-      ))}
-    </Stack>
-  );
-};
-
-const MobileNavItem = ({ label, href }) => {
-  const { onToggle } = useDisclosure();
-
-  return (
-    <Stack spacing={4} onClick={onToggle} display="flex" flexDir="row-reverse"   justifyContent="start">
-      <Flex
-        py={2}
-        as={Link}
-        href={href ?? "#"}
-        justify={"space-between"}
-        align={"center"}
-        _hover={{
-          textDecoration: "none",
-        }}
-      >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
-      </Flex>
-    </Stack>
-  );
-};
-
-const NAV_ITEMS = [
-  {
-    label: "Instalation",
-    href: "#",
-  },
-  {
-    label: "Components",
-    href: "#",
-  },
-  {
-    label: "How use",
-    href: "#",
-  },
-];

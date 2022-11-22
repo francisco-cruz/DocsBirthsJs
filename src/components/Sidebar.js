@@ -6,6 +6,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
+import Nav from "./Nav";
 import Logo from "./Navbar/Logo";
 
 export default function Sidebar() {
@@ -49,62 +50,3 @@ export default function Sidebar() {
     </>
   );
 }
-
-const Nav = () => {
-  return (
-    <Stack bg="#333">
-      {NAV_ITEMS.map((navItem) => (
-        <NavItem key={navItem.label} {...navItem} />
-      ))}
-    </Stack>
-  );
-};
-
-const NavItem = ({ label, href }) => {
-  return (
-    <Stack
-      spacing={4}
-      py={1}
-      display="flex"
-      flexDir="row-reverse"
-      justifyContent="start"
-      _hover={{
-        backgroundColor: "#61DAFB40",
-      }}
-    >
-      <Flex
-        as={Link}
-        href={href ?? "#"}
-        justify={"space-between"}
-        align={"center"}
-        _hover={{
-          textDecoration: "none",
-        }}
-      >
-        <Text
-          ml="25px"
-          fontWeight={400}
-          fontSize="15px"
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
-      </Flex>
-    </Stack>
-  );
-};
-
-const NAV_ITEMS = [
-  {
-    label: "Instalation",
-    href: "#",
-  },
-  {
-    label: "Components",
-    href: "#",
-  },
-  {
-    label: "How use",
-    href: "#",
-  },
-];
