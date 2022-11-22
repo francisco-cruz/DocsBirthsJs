@@ -2,7 +2,7 @@ import { Flex, Link, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 
 export default function Nav() {
   return (
-    <Stack bg="#333">
+    <Stack bg="tranparent">
       {NAV_ITEMS.map((navItem) => (
         <NavItem key={navItem.label} {...navItem} />
       ))}

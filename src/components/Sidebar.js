@@ -1,9 +1,7 @@
 import {
   Flex,
-  Link,
   Stack,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Nav from "./Nav";

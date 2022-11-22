@@ -20,7 +20,7 @@ export default function WithSubnavigation() {
       <Flex
         display="flex"
         flexDir="row-reverse"
-        bg="#333333"
+        bg="#1A202C"
         color={useColorModeValue("gray.600", "white")}
         minH={"70px"}
         py={{ base: 2 }}
@@ -34,7 +34,6 @@ export default function WithSubnavigation() {
           flex={{ base: 0, md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
-          justifyContent="space-between"
         >
           <IconButton
             onClick={onToggle}
