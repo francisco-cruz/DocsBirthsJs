@@ -35,4 +35,5 @@ pre span.string {
 
 a {
     text-decoration: none !important;
+    width: fit-content;
 }

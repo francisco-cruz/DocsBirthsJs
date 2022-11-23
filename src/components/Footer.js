@@ -3,44 +3,18 @@ import {
   Heading,
   Flex,
   List,
-  ListItem,
   Link,
   Text,
 } from "@chakra-ui/react";
 
-const LinkItem = ({ text, isTag = false, tagText }) => {
-  return (
-    <ListItem display="flex">
-      <Link fontWeight="600" href="#" color="rgba(113, 128, 150, 1)">
-        {text}
-      </Link>
-      {isTag && (
-        <Text
-          as="span"
-          bg="#008F94"
-          px="0.25rem"
-          display="inline-flex"
-          alignItems="center"
-          color="#fff"
-          height="1.25rem"
-          borderRadius="0.25rem"
-          ml="0.25rem"
-          mt="0.25rem"
-          fontSize="0.75rem"
-        >
-          {tagText}
-        </Text>
-      )}
-    </ListItem>
-  );
-};
+
 const Footer = () => {
   return (
     <Box
       as="footer"
       bg="#1A202C"
       borderTop="1px solid"
-      borderColor="#ffffff50"
+      borderColor="#ffffff30"
       py="2.5rem"
       fontSize="0.875rem"
     >
@@ -53,7 +27,7 @@ const Footer = () => {
         borderBottom="1px solid"
         borderColor="#ffffff20"
       >
-        <Flex justify="start" flexWrap="wrap" alignItems="start">
+        <Flex justify="start" flexWrap="wrap" alignItems="center">
           <Box w={{ base: "100%", lg: 1 / 4 }} mb={{ base: "1.5rem", lg: "0" }}>
             <Heading
               as="h5"
@@ -65,7 +39,7 @@ const Footer = () => {
               Links
             </Heading>
             <List lineHeight="2" display="flex" flexDir="column" color="gray.500" fontWeight={600}>
-              <Link href="https://github.com/francisco-cruz/BirthsJS" isExternal>GitHub</Link>
+              <Link textDecoration="underline" href="https://github.com/francisco-cruz/BirthsJS" isExternal>GitHub</Link>
               <Link href="https://www.npmjs.com/package/birthsjs" isExternal>NPM</Link>
             </List>
           </Box>

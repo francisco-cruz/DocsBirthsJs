@@ -18,7 +18,7 @@ import Logo from "../components/Navbar/Logo";
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
   return (
-    <Box  borderBottom={"1px solid #ffffff20"}>
+    <Box borderBottom={"1px solid #ffffff20"}>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -67,19 +67,19 @@ const DesktopNav = () => {
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-              <Link
-                p={2}
-                href={navItem.href ?? "#"}
-                fontSize={"sm"}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: "none",
-                  color: linkHoverColor,
-                }}
-              >
-                {navItem.label}
-              </Link>
+          <Link
+            p={2}
+            href={navItem.src ?? "#"}
+            fontSize={"sm"}
+            fontWeight={500}
+            color={linkColor}
+            _hover={{
+              textDecoration: "none",
+              color: linkHoverColor,
+            }}
+          >
+            {navItem.label}
+          </Link>
         </Box>
       ))}
     </Stack>
@@ -99,7 +99,6 @@ const MobileNav = () => {
     </Stack>
   );
 };
-
 
 const MobileNavItem = ({ label, src }) => {
   return (
