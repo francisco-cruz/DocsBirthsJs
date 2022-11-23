@@ -18,10 +18,10 @@ export default function Index() {
   return (
     <>
       <Header />
-      <Stack position="relative" h="100vh">
+      <Stack position="relative">
         <Stack
           w="100%"
-          h="100%"
+          h="100vh"
           px={isSmallerThan767 ? "16px" : "32px"}
           py="64px"
           position="relative"
