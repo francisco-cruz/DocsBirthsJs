@@ -37,6 +37,9 @@ export default function Header() {
             top="15px"
             onClick={onToggle}
             color="white"
+            _hover={{
+             backgroundColor: "#ffffff20"
+            }}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
@@ -59,8 +62,6 @@ export default function Header() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
@@ -70,10 +71,10 @@ const DesktopNav = () => {
             href={navItem.src ?? "#"}
             fontSize={"sm"}
             fontWeight={500}
-            color={linkColor}
+            color="#ffffff90"
             _hover={{
               textDecoration: "none",
-              color: linkHoverColor,
+              color:"#ffffff",
             }}
           >
             {navItem.label}

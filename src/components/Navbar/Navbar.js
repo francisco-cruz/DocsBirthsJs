@@ -32,14 +32,20 @@ export default function WithSubnavigation() {
         in={isOpen}
         animateOpacity
       >
-        <Flex
-          flex={{ base: 0, md: "auto" }}
+       <Flex
+          flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
         >
           <IconButton
+            pos="absolute"
+            right="20px"
+            top="15px"
             onClick={onToggle}
             color="white"
+            _hover={{
+             backgroundColor: "#ffffff20"
+            }}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }

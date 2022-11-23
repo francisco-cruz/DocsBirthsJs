@@ -6,6 +6,7 @@ import {
   Stack,
   Link,
   useMediaQuery,
+  Flex,
 } from "@chakra-ui/react";
 import React from "react";
 import "../assets/styles/index.css";
@@ -38,7 +39,7 @@ export default function Index() {
           </Heading>
           <Stack
             direction="row"
-            justifyContent="center"
+            justifyContent={isSmallerThan767 ? "start" : "center"}
             w="100%"
             spacing={4}
             pt={8}
@@ -58,7 +59,14 @@ export default function Index() {
             }}
           >
             <Link href="/docs/installation">
-              <Button rightIcon={<ArrowForwardIcon />} colorScheme="blue">
+              <Button
+                rightIcon={<ArrowForwardIcon />}
+                bg="#61DAFB40"
+                color="#61DAFB"
+                _hover={{
+                  bg: "#61DAFB50",
+                }}
+              >
                 Documentation
               </Button>
             </Link>
@@ -69,8 +77,11 @@ export default function Index() {
             >
               <Button
                 rightIcon={<ExternalLinkIcon />}
-                colorScheme="teal"
-                variant="outline"
+                bg="tranparent"
+                color="#ffffff95"
+                _hover={{
+                  bg: "#ffffff20",
+                }}
               >
                 GitHub
               </Button>
@@ -83,6 +94,7 @@ export default function Index() {
               </code>
             </pre>
           </Stack>
+          <Flex></Flex>
         </Stack>
         <Footer></Footer>
       </Stack>
