@@ -66,6 +66,9 @@ export default function Index() {
                 _hover={{
                   bg: "#61DAFB50",
                 }}
+                _active={{
+                  bg: "#61DAFB50",
+                }}
               >
                 Documentation
               </Button>
@@ -80,6 +83,9 @@ export default function Index() {
                 bg="tranparent"
                 color="#ffffff95"
                 _hover={{
+                  bg: "#ffffff20",
+                }}
+                _active={{
                   bg: "#ffffff20",
                 }}
               >

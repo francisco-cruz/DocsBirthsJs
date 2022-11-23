@@ -46,6 +46,9 @@ export default function WithSubnavigation() {
             _hover={{
              backgroundColor: "#ffffff20"
             }}
+            _active={{
+              backgroundColor: "#ffffff20"
+             }}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
