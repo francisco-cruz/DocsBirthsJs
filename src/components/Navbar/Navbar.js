@@ -16,7 +16,8 @@ export default function WithSubnavigation() {
   const [isSmallerThan900] = useMediaQuery("(max-width: 767px)");
 
   return (
-    <Box display={isSmallerThan900 ? "block" : "none"}>
+    <Box display={isSmallerThan900 ? "block" : "none"} borderBottom={"1px solid #ffffff20"}
+    align={"center"}>
       <Flex
         display="flex"
         flexDir="row-reverse"
@@ -25,8 +26,6 @@ export default function WithSubnavigation() {
         minH={"70px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={isOpen ? "1px solid transparent" : "1px solid #ffffff20"}
-        align={"center"}
         in={isOpen}
         animateOpacity
       >

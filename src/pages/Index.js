@@ -1,8 +1,9 @@
 // import HeaderIndex from "../components/HeaderIndex";
 import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-import { Button, Heading, Stack, Link, useMediaQuery } from "@chakra-ui/react";
+import { Button, Heading, Stack, Link, useMediaQuery, Stat } from "@chakra-ui/react";
 import React from "react";
 import "../assets/styles/index.css";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Index() {
@@ -10,6 +11,8 @@ export default function Index() {
   return (
     <>
       <Header />
+      <Stack position="relative" w="100vw" h="100vh">
+
       <Stack
         w="100%"
         h="100%"
@@ -57,6 +60,8 @@ export default function Index() {
             </code>
           </pre>
         </Stack>
+      </Stack>
+      <Footer></Footer>
       </Stack>
     </>
   );

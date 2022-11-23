@@ -18,7 +18,7 @@ import Logo from "../components/Navbar/Logo";
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
   return (
-    <Box>
+    <Box  borderBottom={"1px solid #ffffff20"}>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -27,7 +27,6 @@ export default function Header() {
         minH={"70px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={isOpen ? "1px solid transparent" : "1px solid #ffffff20"}
         align={"center"}
       >
         <Flex
@@ -54,7 +53,7 @@ export default function Header() {
           </Flex>
         </Flex>
       </Flex>
-      <Collapse in={isOpen} animateOpacity>
+      <Collapse in={isOpen} animateOpacity bg="red"borderBottom={isOpen ? "1px solid #ffffff20" : "1px solid transparent"}>
         <MobileNav />
       </Collapse>
     </Box>

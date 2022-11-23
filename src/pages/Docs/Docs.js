@@ -30,7 +30,6 @@ export default function Docs() {
         position="relative"
       >
         <Stack
-          id="section-instalation"
           minW="350px"
           w="100%"
           maxW="1000px"
@@ -48,7 +47,7 @@ export default function Docs() {
           <Heading fontSize="16px" color="#ffffff95" fontWeight={400}>
             Install Births from your terminal via npm.
           </Heading>
-          <Stack direction="row" pt={4}>
+          <Stack direction="row" pt={4} id="section-instalation">
             <pre>
               <code>
                 <div>
@@ -79,7 +78,7 @@ export default function Docs() {
               Import FormBirth and InputBirth from birthsjs.
             </Highlight>
           </Heading>
-          <Stack direction="row" pt={4}>
+          <Stack direction="row" pt={4} id="section-import">
             <pre>
               <code>
                 <div>
@@ -111,7 +110,7 @@ export default function Docs() {
               InputBirth to it.
             </Highlight>
           </Heading>
-          <Stack direction="row" pt={4}>
+          <Stack direction="row" pt={4} id="section-use">
             <pre>
               <code>
                 <div>
@@ -161,10 +160,10 @@ export default function Docs() {
               <Link to={"#section-instalation"}>Instalation</Link>
             </ListItem>
             <ListItem color="#ffffff90" fontSize="14px" mb={2}>
-              <Link>Import it</Link>
+              <Link to={"#section-import"} >Import it</Link>
             </ListItem>
             <ListItem color="#ffffff90" fontSize="14px" mb={2}>
-              <Link>Use it</Link>
+              <Link to={"#section-use"}>Use it</Link>
             </ListItem>
           </UnorderedList>
         </Stack>
