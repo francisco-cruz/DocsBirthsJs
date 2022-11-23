@@ -6,9 +6,6 @@ import {
   Stack,
   Collapse,
   Link,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";

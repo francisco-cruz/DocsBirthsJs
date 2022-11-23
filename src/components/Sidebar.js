@@ -1,8 +1,4 @@
-import {
-  Flex,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Flex, Stack, Text } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import Nav from "./Nav";
 import Logo from "./Navbar/Logo";
@@ -37,11 +33,9 @@ export default function Sidebar() {
         </Flex>
 
         <Stack mt="70px">
-          <Text
-          color="#61DAFB"
-          fontWeight={600}
-          ml="25px"
-          >Getting Started</Text>
+          <Text color="#61DAFB" fontWeight={600} ml="25px">
+            Getting Started
+          </Text>
           <Nav />
         </Stack>
       </Flex>

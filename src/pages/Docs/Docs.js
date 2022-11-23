@@ -43,7 +43,9 @@ export default function Docs() {
             How to install Births and get up and running.
           </Heading>
 
-          <Heading fontSize="20px" pt={8}>Install Births</Heading>
+          <Heading fontSize="20px" pt={8}>
+            Install Births
+          </Heading>
           <Heading fontSize="16px" color="#ffffff95" fontWeight={400}>
             Install Births from your terminal via npm.
           </Heading>
@@ -61,7 +63,9 @@ export default function Docs() {
             </pre>
           </Stack>
 
-          <Heading fontSize="20px" pt={8}>Import it</Heading>
+          <Heading fontSize="20px" pt={8}>
+            Import it
+          </Heading>
           <Heading fontSize="16px" fontWeight={400}>
             <Highlight
               query={["FormBirth", "InputBirth"]}
@@ -92,7 +96,9 @@ export default function Docs() {
               </code>
             </pre>
           </Stack>
-          <Heading fontSize="20px" pt={8}>Use it</Heading>
+          <Heading fontSize="20px" pt={8}>
+            Use it
+          </Heading>
           <Heading fontSize="16px" fontWeight={400}>
             <Highlight
               query={["FormBirth", "InputBirth"]}
@@ -160,7 +166,7 @@ export default function Docs() {
               <Link to={"#section-instalation"}>Instalation</Link>
             </ListItem>
             <ListItem color="#ffffff90" fontSize="14px" mb={2}>
-              <Link to={"#section-import"} >Import it</Link>
+              <Link to={"#section-import"}>Import it</Link>
             </ListItem>
             <ListItem color="#ffffff90" fontSize="14px" mb={2}>
               <Link to={"#section-use"}>Use it</Link>
