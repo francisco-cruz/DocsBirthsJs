@@ -23,7 +23,7 @@ export default function Index() {
         <Stack
           w="100%"
           h="100vh"
-          px={isSmallerThan767 ? "16px" : "32px"}
+          px={isSmallerThan767 ? "24px" : "32px"}
           py="64px"
           position="relative"
           display="flex"
