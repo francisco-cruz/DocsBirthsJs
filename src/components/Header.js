@@ -157,7 +157,7 @@ const NAV_ITEMS = [
     src: "/docs",
   },
   {
-    label: "Weapons",
-    src: "/docs",
+    label: "Examples",
+    src: "/examples",
   },
 ];

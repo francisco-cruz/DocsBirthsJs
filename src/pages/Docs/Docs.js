@@ -1,10 +1,10 @@
 import {
   Box,
-  Flex,
   Heading,
   Highlight,
   ListItem,
   Stack,
+  Text,
   UnorderedList,
   useMediaQuery,
 } from "@chakra-ui/react";
@@ -15,17 +15,17 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar";
 
 export default function Docs() {
-  const [isSmallerThan900] = useMediaQuery("(max-width: 767px)");
+  const [isSmallerThan767] = useMediaQuery("(max-width: 767px)");
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
 
   return (
-    <Box display={isSmallerThan900 ? "block" : "flex"}>
+    <Box display={isSmallerThan767 ? "block" : "flex"}>
       <Navbar />
       <Sidebar />
       <Stack
         w="100%"
         h="100%"
-        px={isSmallerThan900 ? "16px" : "32px"}
+        px={isSmallerThan767 ? "16px" : "32px"}
         py="64px"
         position="relative"
       >
@@ -39,9 +39,9 @@ export default function Docs() {
           left="50%"
           transform="translatex(-50%)"
         >
-          <Heading fontSize="30px">Instalation</Heading>
+          <Heading fontSize="30px">Installation</Heading>
           <Heading color="#ffffff95" fontWeight={400} fontSize="20px">
-            How to install Stitches and get up and running.
+            How to install Births and get up and running.
           </Heading>
 
           <Heading fontSize="20px">Install Births</Heading>
@@ -127,10 +127,12 @@ export default function Docs() {
               </code>
             </pre>
           </Stack>
+        <Stack display="flex" flexDir="row" alignItems="center" justifyContent="end" mt={5} >
+          <Link to="/docs/components">
+          <Text color="#ffffff90" textAlign="end">Previous</Text>
+          <Text color="#61DAFB" fontSize="18px" textAlign="end">Components</Text>
+          </Link>
         </Stack>
-        <Stack>
-          <Stack>Previous</Stack>
-          <Stack>Next</Stack>
         </Stack>
       </Stack>
       <Stack
