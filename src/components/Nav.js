@@ -35,7 +35,7 @@ const NavItem = ({ label, src }) => {
           ml="25px"
           fontWeight={400}
           fontSize="15px"
-          color={useColorModeValue("gray.600", "gray.200")}
+          color={useColorModeValue("white.600", "white.200")}
         >
           {label}
         </Text>

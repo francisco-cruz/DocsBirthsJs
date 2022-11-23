@@ -36,6 +36,7 @@ export default function Header() {
             right="20px"
             top="15px"
             onClick={onToggle}
+            color="white"
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
@@ -86,7 +87,7 @@ const DesktopNav = () => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("red", "gray.800")}
+
       py={4}
       display={{ md: "none" }}
     >
@@ -124,7 +125,7 @@ const MobileNavItem = ({ label, src }) => {
           ml="25px"
           fontWeight={400}
           fontSize="15px"
-          color={useColorModeValue("gray.600", "gray.200")}
+          color={useColorModeValue("white.600", "white.200")}
         >
           {label}
         </Text>
