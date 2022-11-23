@@ -16,8 +16,11 @@ export default function WithSubnavigation() {
   const [isSmallerThan900] = useMediaQuery("(max-width: 767px)");
 
   return (
-    <Box display={isSmallerThan900 ? "block" : "none"} borderBottom={"1px solid #ffffff20"}
-    align={"center"}>
+    <Box
+      display={isSmallerThan900 ? "block" : "none"}
+      borderBottom={"1px solid #ffffff20"}
+      align={"center"}
+    >
       <Flex
         display="flex"
         flexDir="row-reverse"

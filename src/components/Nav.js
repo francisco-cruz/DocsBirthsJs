@@ -2,7 +2,7 @@ import { Flex, Link, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 
 export default function Nav() {
   return (
-    <Stack bg="tranparent">
+    <Stack bg="tranparent" py={4}>
       {NAV_ITEMS.map((navItem) => (
         <NavItem key={navItem.label} {...navItem} />
       ))}
@@ -14,7 +14,6 @@ const NavItem = ({ label, src }) => {
   return (
     <Stack
       spacing={4}
-      py={1}
       display="flex"
       flexDir="row-reverse"
       justifyContent="start"
@@ -23,6 +22,7 @@ const NavItem = ({ label, src }) => {
       }}
     >
       <Flex
+        py={1}
         as={Link}
         href={src ?? "#"}
         justify={"space-between"}

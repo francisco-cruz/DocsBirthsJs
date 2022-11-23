@@ -53,7 +53,7 @@ export default function Header() {
           </Flex>
         </Flex>
       </Flex>
-      <Collapse in={isOpen} animateOpacity bg="red"borderBottom={isOpen ? "1px solid #ffffff20" : "1px solid transparent"}>
+      <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
     </Box>
@@ -63,13 +63,10 @@ export default function Header() {
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
               <Link
                 p={2}
                 href={navItem.href ?? "#"}
@@ -83,18 +80,6 @@ const DesktopNav = () => {
               >
                 {navItem.label}
               </Link>
-            </PopoverTrigger>
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}
-              ></PopoverContent>
-            )}
-          </Popover>
         </Box>
       ))}
     </Stack>
@@ -104,8 +89,8 @@ const DesktopNav = () => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
+      bg={useColorModeValue("red", "gray.800")}
+      py={4}
       display={{ md: "none" }}
     >
       {NAV_ITEMS.map((navItem) => (
@@ -115,13 +100,23 @@ const MobileNav = () => {
   );
 };
 
+
 const MobileNavItem = ({ label, src }) => {
-  const { isOpen, onToggle } = useDisclosure();
   return (
-    <Stack spacing={4} onClick={onToggle}>
+    <Stack
+      spacing={4}
+      py={1}
+      display="flex"
+      flexDir="row-reverse"
+      justifyContent="start"
+      _hover={{
+        backgroundColor: "#61DAFB40",
+      }}
+    >
       <Flex
-        py={2}
         as={Link}
+        py={1}
+        w="100%"
         href={src ?? "#"}
         justify={"space-between"}
         align={"center"}
@@ -130,22 +125,14 @@ const MobileNavItem = ({ label, src }) => {
         }}
       >
         <Text
-          fontWeight={600}
+          ml="25px"
+          fontWeight={400}
+          fontSize="15px"
           color={useColorModeValue("gray.600", "gray.200")}
         >
           {label}
         </Text>
       </Flex>
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
-          align={"start"}
-        ></Stack>
-      </Collapse>
     </Stack>
   );
 };

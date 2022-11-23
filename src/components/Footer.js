@@ -82,7 +82,7 @@ const Footer = () => {
             <List lineHeight="2" display="flex" flexDir="column" color="gray.500" fontWeight={600}>
               <Link href="https://github.com/francisco-cruz" isExternal>GitHub</Link>
               <Link href="https://ciscoportifolio.netlify.app/" isExternal>Portifolio</Link>
-              <Link href="https://www.instagram.com/ui_cisco/" isExternal>GitHub</Link>
+              <Link href="https://www.instagram.com/ui_cisco/" isExternal>Instagram</Link>
             </List>
           </Box>
         </Flex>
