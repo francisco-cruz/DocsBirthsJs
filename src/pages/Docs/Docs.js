@@ -44,11 +44,11 @@ export default function Docs() {
             How to install Births and get up and running.
           </Heading>
 
-          <Heading fontSize="20px">Install Births</Heading>
+          <Heading fontSize="20px" pt={8}>Install Births</Heading>
           <Heading fontSize="16px" color="#ffffff95" fontWeight={400}>
             Install Births from your terminal via npm.
           </Heading>
-          <Stack direction="row">
+          <Stack direction="row" pt={4}>
             <pre>
               <code>
                 <div>
@@ -62,7 +62,7 @@ export default function Docs() {
             </pre>
           </Stack>
 
-          <Heading fontSize="20px">Import it</Heading>
+          <Heading fontSize="20px" pt={8}>Import it</Heading>
           <Heading fontSize="16px" fontWeight={400}>
             <Highlight
               query={["FormBirth", "InputBirth"]}
@@ -79,7 +79,7 @@ export default function Docs() {
               Import FormBirth and InputBirth from birthsjs.
             </Highlight>
           </Heading>
-          <Stack direction="row">
+          <Stack direction="row" pt={4}>
             <pre>
               <code>
                 <div>
@@ -93,7 +93,7 @@ export default function Docs() {
               </code>
             </pre>
           </Stack>
-          <Heading fontSize="20px">Use it</Heading>
+          <Heading fontSize="20px" pt={8}>Use it</Heading>
           <Heading fontSize="16px" fontWeight={400}>
             <Highlight
               query={["FormBirth", "InputBirth"]}
@@ -111,7 +111,7 @@ export default function Docs() {
               InputBirth to it.
             </Highlight>
           </Heading>
-          <Stack direction="row">
+          <Stack direction="row" pt={4}>
             <pre>
               <code>
                 <div>
@@ -127,12 +127,23 @@ export default function Docs() {
               </code>
             </pre>
           </Stack>
-        <Stack display="flex" flexDir="row" alignItems="center" justifyContent="end" mt={5} >
-          <Link to="/docs/components">
-          <Text color="#ffffff90" textAlign="end">Previous</Text>
-          <Text color="#61DAFB" fontSize="18px" textAlign="end">Components</Text>
-          </Link>
-        </Stack>
+          <Stack
+            display="flex"
+            flexDir="row"
+            alignItems="center"
+            justifyContent="end"
+            pt={4}
+            pb={8}
+          >
+            <Link to="/docs/components">
+              <Text color="#ffffff90" textAlign="end">
+                Previous
+              </Text>
+              <Text color="#61DAFB" fontSize="18px" textAlign="end">
+                Components
+              </Text>
+            </Link>
+          </Stack>
         </Stack>
       </Stack>
       <Stack

@@ -154,7 +154,7 @@ const MobileNavItem = ({ label, src }) => {
 const NAV_ITEMS = [
   {
     label: "Docs",
-    src: "/docs",
+    src: "/docs/installation",
   },
   {
     label: "Examples",

@@ -46,15 +46,15 @@ const NavItem = ({ label, src }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Instalation",
-    src: "docs/instalation",
+    label: "Installation",
+    src: "/docs/installation",
   },
   {
     label: "Components",
-    src: "docs/components",
+    src: "/docs/components",
   },
   {
     label: "How use",
-    src: "docs/howuse",
+    src: "/docs/howuse",
   },
 ];
