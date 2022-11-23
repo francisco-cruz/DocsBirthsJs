@@ -18,7 +18,7 @@ export default function Index() {
   return (
     <>
       <Header />
-      <Stack position="relative" w="100vw" h="100vh">
+      <Stack position="relative" h="100vh">
         <Stack
           w="100%"
           h="100%"

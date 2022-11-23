@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <Box borderBottom={"1px solid #ffffff20"}>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
+        bg="#1A202C"
         color={useColorModeValue("gray.600", "white")}
         display="flex"
         flexDir="row-reverse"

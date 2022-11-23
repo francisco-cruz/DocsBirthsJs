@@ -27,7 +27,7 @@ const Footer = () => {
         borderBottom="1px solid"
         borderColor="#ffffff20"
       >
-        <Flex justify="start" flexWrap="wrap" alignItems="center">
+        <Flex justify="start" flexWrap="wrap" alignItems="center" pl="16px">
           <Box w={{ base: "100%", lg: 1 / 4 }} mb={{ base: "1.5rem", lg: "0" }}>
             <Heading
               as="h5"
