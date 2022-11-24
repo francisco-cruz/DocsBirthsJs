@@ -50,7 +50,7 @@ export default function Index() {
               backgroundRepeat: "no-repeat",
               pos: "absolute",
               backgroundPosition: "center",
-              top: 0,
+              top: -500,
               right: 0,
               left: 0,
               bottom: 0,
