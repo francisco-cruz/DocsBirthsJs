@@ -1,4 +1,3 @@
-// import HeaderIndex from "../components/HeaderIndex";
 import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Button,

@@ -1,12 +1,4 @@
-import {
-  Box,
-  Heading,
-  Flex,
-  List,
-  Link,
-  Text,
-} from "@chakra-ui/react";
-
+import { Box, Heading, Flex, List, Link, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -38,9 +30,23 @@ const Footer = () => {
             >
               Links
             </Heading>
-            <List lineHeight="2" display="flex" flexDir="column" color="gray.500" fontWeight={600}>
-              <Link textDecoration="underline" href="https://github.com/francisco-cruz/BirthsJS" isExternal>GitHub</Link>
-              <Link href="https://www.npmjs.com/package/birthsjs" isExternal>npm</Link>
+            <List
+              lineHeight="2"
+              display="flex"
+              flexDir="column"
+              color="gray.500"
+              fontWeight={600}
+            >
+              <Link
+                textDecoration="underline"
+                href="https://github.com/francisco-cruz/BirthsJS"
+                isExternal
+              >
+                GitHub
+              </Link>
+              <Link href="https://www.npmjs.com/package/birthsjs" isExternal>
+                npm
+              </Link>
             </List>
           </Box>
           <Box w={{ base: "100%", lg: 1 / 4 }} mb={{ base: "1.5rem", lg: "0" }}>
@@ -53,10 +59,22 @@ const Footer = () => {
             >
               Developer
             </Heading>
-            <List lineHeight="2" display="flex" flexDir="column" color="gray.500" fontWeight={600}>
-              <Link href="https://github.com/francisco-cruz" isExternal>GitHub</Link>
-              <Link href="https://ciscoportifolio.netlify.app/" isExternal>Portifolio</Link>
-              <Link href="https://www.instagram.com/ui_cisco/" isExternal>Instagram</Link>
+            <List
+              lineHeight="2"
+              display="flex"
+              flexDir="column"
+              color="gray.500"
+              fontWeight={600}
+            >
+              <Link href="https://github.com/francisco-cruz" isExternal>
+                GitHub
+              </Link>
+              <Link href="https://ciscoportifolio.netlify.app/" isExternal>
+                Portifolio
+              </Link>
+              <Link href="https://www.instagram.com/ui_cisco/" isExternal>
+                Instagram
+              </Link>
             </List>
           </Box>
         </Flex>
