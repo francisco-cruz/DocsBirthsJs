@@ -4,7 +4,8 @@ import {
   Heading,
   Stack,
   Link,
-  useMediaQuery
+  useMediaQuery,
+  Highlight
 } from "@chakra-ui/react";
 import React from "react";
 import "../assets/styles/index.css";
@@ -20,7 +21,7 @@ export default function Index() {
       <Stack position="relative">
         <Stack
           w="100%"
-          h="100vh"
+          minH="100vh"
           px={isSmallerThan767 ? "24px" : "32px"}
           py="64px"
           position="relative"
@@ -99,19 +100,90 @@ export default function Index() {
             </pre>
           </Stack>
           <Stack
-            pt={20}
             w="100%"
             alignItems={isSmallerThan767 ? "start" : "center"}
           >
+          <Heading
+              fontSize="24px"
+              color="#ffffff"
+              fontWeight={700}
+              pt={20}
+              >
+                
+                Use it
+            </Heading>
+          <Stack  w="100%" maxW="600px" pt={5}>
+            <pre>
+              <code>
+                <Stack mb={3}>
+                  <span class="comment">
+                    import{"\n"}FormBirth,{"\n"}InputBirth{"\n"}from 'birthsjs'{" "}
+                  </span>
+                </Stack>
+                <div>
+                  <span class="var">{"const"}</span>{" "}
+                  <span class="string">{"App"}</span>{" "}
+                  <span class="operator">{"="}</span>{" "}
+                  <span class="function">{"()"}</span>{" "}
+                  <span class="operator">{"=>"}</span>{" "}
+                  <span class="function">{"("}</span> {"\n"}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"FormBirth"}</span>{" "}
+                  <span class="operator">{">"}</span>
+                  {"\n"}{" "}{" "}<span class="operator">{"<"}</span>
+                  <span class="component">{"InputBirth"}</span> {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"size"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"large"</span> {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"borderRadius"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"5"</span> {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"disabled"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"false"</span> 
+                  {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"legalAge"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"16"</span> 
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{">"}</span>
+                  {"\n"} {" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="function">{"button"}</span>{" "}
+                  <span class="type">{"type"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"submit"</span>
+                  <span class="operator">{">"}</span>
+                  {"\n"} {" "} {" "}
+                  Send
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="function">{"button"}</span>{" "}
+                  <span class="operator">{">"}</span>
+                  {"\n"}{" "} 
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"InputBirth"}</span>{" "}
+                  <span class="operator">{"/>"}</span>
+                  {"\n"} 
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"FormBirth"}</span>{" "}
+                  <span class="operator">{"/>"}</span>
+                  {"\n"}
+                  <span class="function">{")"}</span>{" "}
+                </div>
+              </code>
+            </pre>
+          </Stack>
             <Heading
               fontSize="24px"
               color="#ffffff"
               fontWeight={700}
+              pt={20}
               textAlign={isSmallerThan767 ? "start" : "center"}
             >
               How validation works?
             </Heading>
-            <Stack w="100%" maxW="600px" pt={8}>
+            <Stack w="100%" maxW="600px" pt={5}>
               <pre>
                 <code>
                   <div>

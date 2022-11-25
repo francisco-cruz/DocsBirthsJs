@@ -1,17 +1,15 @@
 import { Box, Heading, Link, ListItem, Stack, UnorderedList, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import '../assets/styles/index.css'
-import Sidebar from "../components/Sidebar";
-import Navbar from '../components/Navbar/Navbar'
+import Header from "../components/Header";
 
 export default function Examples() {
   const [isSmallerThan767] = useMediaQuery("(max-width: 767px)");
   const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
 
   return (
-    <Box display={isSmallerThan767 ? "block" : "flex"}>
-      <Navbar />
-      <Sidebar />
+    <Box>
+      <Header />
       <Stack
         w="100%"
         h="100%"

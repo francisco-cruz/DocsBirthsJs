@@ -153,9 +153,6 @@ export default function Components() {
                 <div>
                   <span class="operator">{"<"}</span>
                   <span class="component">{"InputBirth"}</span>{" "}
-                  <span class="operator">{">"}</span>{" "}
-                  <span class="operator">{"<"}</span>
-                  <span class="component">{"InputBirth"}</span>{" "}
                   <span class="operator">{"/>"}</span>
                   {"\n"}
                 </div>
