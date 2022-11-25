@@ -119,15 +119,67 @@ export default function Docs() {
           <Stack direction="row" pt={4} id="section-use">
             <pre>
               <code>
-                <div>
+                <Stack mb={3}>
                   <span class="comment">
                     import{"\n"}FormBirth,{"\n"}InputBirth{"\n"}from 'birthsjs'{" "}
                   </span>
-                </div>
+                </Stack>
                 <div>
-                  <span class="function">import</span> birthsjs{" "}
-                  <span class="function">from</span>{" "}
-                  <span class="string">'birthsjs'</span>{" "}
+                  <span class="var">{"const"}</span>{" "}
+                  <span class="string">{"App"}</span>{" "}
+                  <span class="operator">{"="}</span>{" "}
+                  <span class="function">{"()"}</span>{" "}
+                  <span class="operator">{"=>"}</span>{" "}
+                  <span class="function">{"("}</span>{" "}
+                  {"\n"}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"FormBirth"}</span>{" "}
+                  <span class="operator">{">"}</span>
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"InputBirth"}</span>{" "}
+                  {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"size"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"large"</span>{" "}
+                  {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"borderRadius"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"5"</span>{" "}
+                  {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"disabled"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">""</span>{" "}
+                  {"\n"}{" "}{" "}{" "}
+                  <span class="type">{"legalAge"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"16"</span>{" "}
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{">"}</span>
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="function">{"button"}</span>{" "}
+                  <span class="type">{"type"}</span>
+                  <span class="operator">{"="}</span>
+                  <span class="string">"submit"</span>
+                  <span class="operator">{">"}</span>
+                  {"\n"}{" "}{" "}{" "}
+                  Send
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="function">{"button"}</span>{" "}
+                  <span class="operator">{">"}</span>
+                  {"\n"}{" "}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"InputBirth"}</span>{" "}
+                  <span class="operator">{"/>"}</span>
+                  {"\n"}{" "}
+                  <span class="operator">{"<"}</span>
+                  <span class="component">{"FormBirth"}</span>{" "}
+                  <span class="operator">{"/>"}</span>
+                  {"\n"}
+                  <span class="function">{")"}</span>{" "}
+
                 </div>
               </code>
             </pre>

@@ -27,6 +27,7 @@ const NavItem = ({ label, src }) => {
         href={src ?? "#"}
         justify={"space-between"}
         align={"center"}
+        w="100%"
         _hover={{
           textDecoration: "none",
         }}

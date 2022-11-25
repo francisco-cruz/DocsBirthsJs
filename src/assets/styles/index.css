@@ -2,6 +2,7 @@
 body {
     background-color: #1A202C !important;
     color: white !important;
+    
 }
 
 pre {
@@ -31,6 +32,24 @@ pre span.punctuation
 
 pre span.string {
     color: #61FBDF;
+    font-size: 14px;
+}
+
+pre span.number,
+pre span.type
+ {
+    color: #EFD26C;
+    font-size: 14px;
+}
+
+pre span.var {
+    color: #EF846C;
+    font-size: 14px;
+}
+
+
+pre span.component {
+    color: #A998EB;
     font-size: 14px;
 }
 

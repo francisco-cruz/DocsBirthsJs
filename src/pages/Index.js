@@ -31,7 +31,7 @@ export default function Index() {
           alignItems={isSmallerThan767 ? "start" : "center"}
         >
           <Heading fontSize={isSmallerThan767 ? "32px" : "56px"}>
-            Validate dates of birth
+            Validate birth dates
           </Heading>
           <Heading fontSize="22px" color="#ffffff95" fontWeight={400}>
             With Births it is possible to validate birth dates with just one
@@ -93,16 +93,56 @@ export default function Index() {
               </Button>
             </Link>
           </Stack>
-          <Stack w="100%" maxW="600px" pt={10} px={5}>
+          <Stack w="100%" maxW="600px" pt={10}>
             <pre>
               <code>
                 <div>npm install birthsjs</div>
               </code>
             </pre>
           </Stack>
-          <Flex></Flex>
+          <Stack
+            pt={20}
+            w="100%"
+            alignItems={isSmallerThan767 ? "start" : "center"}
+          >
+            <Heading
+              fontSize="24px"
+              color="#ffffff"
+              fontWeight={400}
+              textAlign={isSmallerThan767 ? "start" : "center"}
+            >
+              How validation works?
+            </Heading>
+            <Stack w="100%" maxW="600px" pt={8}>
+              <pre>
+                <code>
+                  <div>
+                    <span class="comment"># Value passed as parameter</span>
+                    {"\n"}
+                    <span class="string">const</span> legalAge{" "}
+                    <span class="operator">=</span>{" "}
+                    <span class="number">16</span>
+                    {"\n"}
+                    <span class="comment"># Age passed in the field</span>
+                    {"\n"}
+                    <span class="string">const</span> age{" "}
+                    <span class="operator">=</span>{" "}
+                    <span class="number">14</span>
+                    {"\n"}
+                    <span class="function">{"if ("}</span>{" "}
+                    <span class="string">age</span>{" "}
+                    <span class="operator">{"<"}</span>{" "}
+                    <span class="string">legalAge</span>{" "}
+                    <span class="function">{")"}</span>
+                    {"\n"} <span class="function">{"return "}</span>
+                    “Sorry, prohibited minors.”
+                  </div>
+                </code>
+              </pre>
+            </Stack>
+          </Stack>
         </Stack>
-        <Footer></Footer>
+        <Footer />
       </Stack>
     </>
   );

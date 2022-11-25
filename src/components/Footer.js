@@ -40,7 +40,7 @@ const Footer = () => {
             </Heading>
             <List lineHeight="2" display="flex" flexDir="column" color="gray.500" fontWeight={600}>
               <Link textDecoration="underline" href="https://github.com/francisco-cruz/BirthsJS" isExternal>GitHub</Link>
-              <Link href="https://www.npmjs.com/package/birthsjs" isExternal>NPM</Link>
+              <Link href="https://www.npmjs.com/package/birthsjs" isExternal>npm</Link>
             </List>
           </Box>
           <Box w={{ base: "100%", lg: 1 / 4 }} mb={{ base: "1.5rem", lg: "0" }}>
