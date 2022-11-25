@@ -5,8 +5,7 @@ import {
   Heading,
   Stack,
   Link,
-  useMediaQuery,
-  Flex,
+  useMediaQuery
 } from "@chakra-ui/react";
 import React from "react";
 import "../assets/styles/index.css";
@@ -135,7 +134,7 @@ export default function Index() {
                     <span class="string">legalAge</span>{" "}
                     <span class="function">{")"}</span>
                     {"\n"} <span class="function">{"return "}</span>
-                    “Sorry, prohibited minors.”
+                    “Prohibited minors!”
                   </div>
                 </code>
               </pre>

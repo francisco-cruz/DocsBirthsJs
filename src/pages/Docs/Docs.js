@@ -189,12 +189,12 @@ export default function Docs() {
             flexDir="row"
             alignItems="center"
             justifyContent="end"
-            pt={4}
-            pb={8}
+            pt={20}
+            pb={20}
           >
             <Link to="/docs/components">
               <Text color="#ffffff90" textAlign="end">
-                Previous
+                Next
               </Text>
               <Text color="#61DAFB" fontSize="18px" textAlign="end">
                 Components
