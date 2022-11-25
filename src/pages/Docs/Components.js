@@ -15,6 +15,7 @@ import Navbar from "../../components/Navbar/Navbar";
 
 export default function Components() {
   const [isSmallerThan767] = useMediaQuery("(max-width: 767px)");
+  const [isSmallerThan1000] = useMediaQuery("(max-width: 1000px)");
 
   return (
     <Box display={isSmallerThan767 ? "block" : "flex"}>
@@ -65,7 +66,7 @@ export default function Components() {
           <Heading fontSize="22px" pt={5} fontWeight={400}>
             Import
           </Heading>
-          <Stack direction="row" pt={4} id="section-import">
+          <Stack direction="row" pt={4} id="section-formbirth">
             <pre>
               <code>
                 <div>
@@ -141,7 +142,7 @@ export default function Components() {
           <Heading fontSize="22px" pt={5} fontWeight={400}>
             Usage
           </Heading>
-          <Stack direction="row" pt={4}>
+          <Stack direction="row" pt={4} id="section-inputbirth">
             <pre>
               <code>
                 <Stack mb={3}>
@@ -177,15 +178,27 @@ export default function Components() {
                 Installation
               </Text>
             </Link>
-            <Link href="/docs/howuse">
-              <Text color="#ffffff90" textAlign="end">
-                Next
-              </Text>
-              <Text color="#61DAFB" fontSize="18px" textAlign="end">
-                How use
-              </Text>
-            </Link>
           </Stack>
+        </Stack>
+      </Stack>
+      <Stack
+        pt="64px"
+        w="420px"
+        display={isSmallerThan1000 ? "none" : "flex"}
+        alignItems="center"
+      >
+        <Stack display="flex" flexDir="column" alignItems="start">
+          <Heading fontSize="20px" mb={4}>
+            Quick nav
+          </Heading>
+          <UnorderedList listStyleType="none">
+            <ListItem color="#ffffff90" fontSize="14px" mb={2}>
+              <Link href={"#section-formbirth"}>FormBirth</Link>
+            </ListItem>
+            <ListItem color="#ffffff90" fontSize="14px" mb={2}>
+              <Link href={"#section-inputbirth"}>InputBirth</Link>
+            </ListItem>
+          </UnorderedList>
         </Stack>
       </Stack>
     </Box>

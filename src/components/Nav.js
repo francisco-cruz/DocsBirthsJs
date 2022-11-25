@@ -54,8 +54,4 @@ const NAV_ITEMS = [
     label: "Components",
     src: "/docs/components",
   },
-  {
-    label: "How use",
-    src: "/docs/howuse",
-  },
 ];

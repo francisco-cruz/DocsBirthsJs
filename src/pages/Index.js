@@ -107,7 +107,7 @@ export default function Index() {
             <Heading
               fontSize="24px"
               color="#ffffff"
-              fontWeight={400}
+              fontWeight={700}
               textAlign={isSmallerThan767 ? "start" : "center"}
             >
               How validation works?
