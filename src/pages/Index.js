@@ -118,13 +118,13 @@ export default function Index() {
                   <div>
                     <span class="comment"># Value passed as parameter</span>
                     {"\n"}
-                    <span class="string">const</span> legalAge{" "}
+                    <span class="var">const</span> legalAge{" "}
                     <span class="operator">=</span>{" "}
                     <span class="number">16</span>
                     {"\n"}
                     <span class="comment"># Age passed in the field</span>
                     {"\n"}
-                    <span class="string">const</span> age{" "}
+                    <span class="var">const</span> age{" "}
                     <span class="operator">=</span>{" "}
                     <span class="number">14</span>
                     {"\n"}
