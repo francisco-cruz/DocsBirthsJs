@@ -14,13 +14,18 @@ export default function Sidebar() {
         top="0"
         left="0"
         flexDir="column"
-        borderEnd="1px solid #ffffff20"
         justifyContent="space-between"
-        boxShadow="0 4px 12px 0 rgba( 0, 0, 0, 0.05)"
         h="100vh"
         minW="250px"
         bg="transparent"
       >
+        <Stack
+          position="fixed"
+          left="250px"
+          bg="#ffffff30"
+          h="100vh"
+          w="1px"
+        ></Stack>
         <Flex
           pl="16px"
           pt="7px"
@@ -31,7 +36,6 @@ export default function Sidebar() {
         >
           <Logo />
         </Flex>
-
         <Stack mt="70px">
           <Text color="#61DAFB" fontWeight={600} ml="25px">
             Getting Started

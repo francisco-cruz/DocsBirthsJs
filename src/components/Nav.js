@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <Stack bg="tranparent" py={4}>
       {NAV_ITEMS.map((navItem) => (
-        <NavItem key={navItem.label} {...navItem} />
+        <NavItem key={navItem.label} {...navItem} class="nav-item" />
       ))}
     </Stack>
   );
