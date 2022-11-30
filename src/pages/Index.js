@@ -5,7 +5,6 @@ import {
   Stack,
   Link,
   useMediaQuery,
-  Highlight
 } from "@chakra-ui/react";
 import React from "react";
 import "../assets/styles/index.css";
